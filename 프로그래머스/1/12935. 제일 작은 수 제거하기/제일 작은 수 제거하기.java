@@ -5,7 +5,7 @@ class Solution {
         int min = arr[0];
         int minIndex = 0;
         
-        if(arr.length ==1){
+        if(arr.length == 1){
             int[] answer = {-1};
             return answer;
         }
