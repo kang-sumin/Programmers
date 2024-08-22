@@ -4,7 +4,7 @@ class Solution {
         
         if(s.length() == 4 || s.length() == 6){
             try{
-                Integer sToInt = Integer.parseInt(s);
+                int sToInt = Integer.parseInt(s);
                 answer = true;
             }catch(NumberFormatException e){
                 answer = false;
