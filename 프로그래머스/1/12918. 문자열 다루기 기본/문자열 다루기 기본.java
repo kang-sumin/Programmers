@@ -3,9 +3,10 @@ class Solution {
         boolean answer = true;
         
         if(s.length() == 4 || s.length() == 6){
-            if(s.matches("(^[0-9]*$)")){
+            try{
+                Integer sToInt = Integer.parseInt(s);
                 answer = true;
-            }else{
+            }catch(NumberFormatException e){
                 answer = false;
             }
         }else{
