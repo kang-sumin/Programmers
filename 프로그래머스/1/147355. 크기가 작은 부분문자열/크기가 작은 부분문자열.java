@@ -5,7 +5,8 @@ class Solution {
         int answer = 0;
     
         // 반복 횟수 구하기
-        int lengthNumber = t.length() - (p.length() - 1);
+        // 수식의 간결화 및 가독성(직관적이게)을 위해 기존 int lengthNumber = t.length() - (p.length() - 1); 계산방식에서 아래 방식으로 변경함
+        int lengthNumber = t.length() - p.length() + 1;
         
         for(int i = 0 ; i < lengthNumber ; i++){
             long tNumber = Long.parseLong(t.substring(i,i + p.length()));
